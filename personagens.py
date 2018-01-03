@@ -28,4 +28,7 @@ class Demolidor_v4(Personagem):
         print("Demolidor usou Justiça sombria e causou 1 ponto de dano penetrante em {}".format(alvo.nome_carta))
         print("Tirando assim: {}".format(alvo.cartas_vida.pop(alvo1)))
         input()
+    @property
+    def redutor(self):
+        return -1
 
