@@ -36,9 +36,16 @@ class Demolidor_v4(Personagem):
 class Emissario(Personagem):
     def __init__(self):
         super().__init__()
-    def texto(self,marc,deck):
-        if marc == 1:
-            print(deck.pop())
-            print(deck.pop())
+    def texto(self,marc,campo,deck):
+        if marc == 1 and Personagem.afiliacao == "tentaculo" in campo:
+            carta1 = deck.pop()
+            carta2 = deck.pop()
+            print("{}\n{}".format(carta1,carta2))
             carta = input("> ")
-            
+            if carta == carta1.nome:
+                recursos = carta2
+                mao = carta1
+            else:
+                recursos = carta1
+                mao = carta2
+
