@@ -29,6 +29,7 @@ class Demolidor_v4(Personagem):
         print("Tirando assim: {}".format(alvo.cartas_vida.pop(alvo1)))
         input()
     @property
-    def redutor(self):
-        return -1
-
+    def redutor(self,personagem):
+        if personagem.afiliacao == "tentaculo":
+            return -1
+        return 0
