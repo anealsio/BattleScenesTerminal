@@ -33,3 +33,12 @@ class Demolidor_v4(Personagem):
         if personagem.afiliacao == "tentaculo":
             return -1
         return 0
+class Emissario(Personagem):
+    def __init__(self):
+        super().__init__()
+    def texto(self,marc,deck):
+        if marc == 1:
+            print(deck.pop())
+            print(deck.pop())
+            carta = input("> ")
+            
