@@ -49,3 +49,10 @@ class Emissario(Personagem):
                 recursos = carta1
                 mao = carta2
 
+    def habilidade(self,deck,mao):
+        if deck[-1].afiliacao == "tentaculo":
+            mao += [deck.pop()]
+        if deck[-2].afiliacao == "tentaculo":
+            mao += [deck.pop()]
+        if deck[-3].afiliacao == "tentaculo":
+            mao += [deck.pop()]
