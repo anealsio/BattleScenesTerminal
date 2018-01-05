@@ -56,3 +56,9 @@ class Emissario(Personagem):
             mao += [deck.pop()]
         if deck[-3].afiliacao == "tentaculo":
             mao += [deck.pop()]
+class Mestre (Personagem):
+    def __init__(self):
+        super(self).__init__()
+    def texto(self,marc,campo,deck):
+        if marc == 1 and Personagem.afiliacao == "tentaculo" in campo:
+            mao = deck.pop()
