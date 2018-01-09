@@ -99,3 +99,13 @@ class Ninja_v3 (Personagem):
         print("{}".format(alvo.nome_carta))
         print("Tirando assim: {}".format(alvo.cartas_vida.pop(alvo1)))
         input()
+class Ninja_v4 (Personagem):
+    def __init__(self):
+        super(Ninja_v1, self).__init__()
+    def ataque(self,deck,mao,alvo):
+        self.capacitacao_atual+=1
+        alvo1 = Dano.escolher_carta(self,alvo)
+
+        print("{}".format(alvo.nome_carta))
+        print("Tirando assim: {}".format(alvo.cartas_vida.pop(alvo1)))
+        input()
