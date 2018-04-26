@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1463621206 source:c:\users\anisio pai\desktop\questao13\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1463621920 source:c:\users\anisio pai\desktop\tudou\lista\questao13\main.c
+	<stdio.h>
+	<stdlib.h>
+
